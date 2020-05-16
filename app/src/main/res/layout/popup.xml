@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="25dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/popTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="More information"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/popListTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popTitle"
+                    android:text=""
+                    android:layout_marginBottom="8dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/dismissPopTop"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/popTitle"
+                    android:layout_alignBottom="@+id/popListTitle"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+                <TextView
+                    android:id="@+id/popListnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popListTitle"
+                    android:text="Total Confirmed:"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/popList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/popListnum"
+                    android:layout_below="@+id/popListTitle"
+                    android:layout_centerHorizontal="true"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/newConf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popListnum"
+                    android:text="New Confirmed:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newconfN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popListnum"
+                    android:layout_toEndOf="@+id/newConf"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newDeaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newConf"
+                    android:text="New Deaths:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newDeathsN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/newDeaths"
+                    android:layout_below="@+id/newConf"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/deaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newDeaths"
+                    android:text="Total Deaths:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/deathsN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/deaths"
+                    android:layout_below="@+id/newDeaths"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/deaths"
+                    android:text="New Recovered:"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newRecoveredN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/newRecovered"
+                    android:layout_below="@+id/deaths"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/newRecovered"
+                    android:text="Total Recovered"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/recoveredN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/recovered"
+                    android:layout_below="@+id/newRecovered"
+                    android:text=""
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/recovered"
+                    android:text=""
+                    android:textStyle="italic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp" />
+
+
+
+            </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
